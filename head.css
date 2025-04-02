@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;  
+    font-family: inherit; 
+}
+
+a:hover, a:focus, a:active, a:visited {
+    color: inherit;  
+    text-decoration: none; 
+    font-family: inherit; 
+}
+
+
+ /* Fonts */
+.notable-regular {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: #0e1111;
+}
+
+/* Navbar Start */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 5px solid white; */
+
+}
+nav ul{
+    gap: 80px;
+    padding: 17px 45px;
+    /* border: 1px solid white; */
+    opacity: 0.5; /* Fades out when hovering over the <li> */
+    transition: opacity, 0.5s ease;
+    box-shadow: rgb(255, 255, 255) 1px 1px 10px;
+    border-radius: 50px;
+}
+nav ul:hover{
+    opacity: 1; /* Fades out when hovering over the <li> */
+    transition: opacity, 0.5s ease;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.5; /* Fades out when hovering over the <li> */
+    transition: opacity, 0.5s ease; /* Smooth transition for fading effect */
+}
+
+
+/* Navbar End */
+
+/* Firstpage Start */
+
+
+.heading{
+    display: flex;
+    /* justify-content: center; */
+    align-items: end;
+    margin-left: 70px;
+    height: 50vh;
+    margin-bottom: 60px;
+    font-family: "Notable", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 80%;
+    font-size: 170px;
+    color: rgb(223, 225, 227);
+}
+
+.space{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    height: 30px;
+    width: 84vw;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    font-size: 25px;
+    list-style: none;
+    color: aliceblue;
+}
+
+/* .space ul{
+    font-size: 25px;
+    list-style: none;
+    color: aliceblue;
+} */
+
+.secondpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* background-color: #7a0e0e; */
+    margin-top: 90px;
+    height: 80vh;
+    width: 99vw;
+    line-height: 0.8;
+
+    animation: rotate-to-reveal linear;
+    animation-timeline: scroll();
+
+}
+
+@keyframes rotate-to-reveal {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Firstpage End */
+
+/* Secondpage Start */
+
+
+.secondpage p {
+    font-family: "Notable", sans-serif;
+    font-size: 120px;
+    color: aliceblue;
+}
+
+.upperword{
+    position: absolute;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.upperword p{
+    font-size: 160px;
+    font-family: "Aguafina Script", cursive;
+    color: rgb(255, 77, 0);
+}
+
+.wordsecond{
+    margin-top: 10px;
+}
+
+.shapes{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 99vw;
+    
+}
+
+.bckimg1{
+    position: absolute;
+    height: 200px;
+    margin-top: 170px;
+    margin-left: 900px;
+    animation: rotate-on-scroll linear;
+    animation-timeline: scroll();
+}
+
+.bckimg2{
+    position: absolute;
+    height: 190px;
+    margin-top: 330px;
+    margin-right: 900px;
+    animation: rotate-on-scroll linear;
+    animation-timeline: scroll();
+}
+    
+@keyframes rotate-on-scroll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Secondpage End */
+
+/* Thirdpage Start */
+
+.thirdpage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    margin: auto;
+    height: 80vh;
+    width: 88vw;
+    color: aliceblue;
+}
+    
+.tpdiv1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 20px;
+
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+.tpdiv1 p{
+    font-family: "Fontdiner Swanky", serif;
+    font-weight: 400;
+    position: absolute;
+}
+
+.about{
+    font-size: 120px;
+    color: rgb(255, 77, 0);
+
+}
+
+.me{
+    margin-left: 170px;
+    margin-top: 80px;
+    font-size: 80px;
+
+}
+
+.tpdiv2 {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px white solid;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+}
+
+.tpdiv2 p{
+    /* border: 2px solid white; */
+    width: 50vw;
+    padding: 10px 10px;
+    line-height: 1.2;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 45px;
+    position: absolute;
+    
+
+}
+.web {
+    margin-top: 8px;
+    font-size: 70px;
+    position: absolute;
+    color: #ff69b4;
+    font-family: "Aguafina Script", cursive;
+    vertical-align: middle; /* Align it properly */
+    line-height: 1; /* Prevent line gap from increasing */
+    z-index: 99;
+    
+}
+.webback {
+    font-size: 60px;
+    /* position: absolute; */
+    color: #0e1111;
+    font-family: "Aguafina Script", cursive;
+    vertical-align: middle; /* Align it properly */
+    line-height: 1; /* Prevent line gap from increasing */
+    z-index: 99;
+    
+}
+
+
+.tpdiv3 {
+    border-radius: 20px;
+    border: 2px white solid;
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+     
+/* Thirdpage End */
