@@ -132,9 +132,13 @@ nav ul li:hover {
     0% {
         opacity: 0;
     }
-    50% {
+    25%{
         opacity: 1;
     }
+    50% {
+        opacity: 0;
+    }
+    
     100% {
         opacity: 0;
     }
@@ -318,7 +322,7 @@ nav ul li:hover {
     margin: auto;
     margin-top: 180px;
     background-color:  #0e1111;
-    height: 100vh;
+    height: 60vh;
     width: max-content;
     text-align: center;
     
@@ -331,7 +335,32 @@ nav ul li:hover {
     font-family: "Fontdiner Swanky", serif;
     
 }
-
 .icons{
+    width: 70vw;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons img{
     height: 100px;
+}
+
+
+.fifthpagetitle{
+    
+    color: rgb(255, 77, 0);
+    font-size: 100px;
+    font-family: "Fontdiner Swanky", serif;
+    
+}
+.fifthpage {
+    /* display: flex;
+    justify-content: center; */
+    margin: auto;
+    background-color:  #0e1111;
+    height: 100vh;
+    width: max-content;
+    text-align: center;
+    
 }
