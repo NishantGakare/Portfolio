@@ -347,7 +347,7 @@ nav ul li:hover {
 }
 
 
-.fifthpagetitle{
+/* .fifthpagetitle{
     
     color: rgb(255, 77, 0);
     font-size: 100px;
@@ -357,10 +357,165 @@ nav ul li:hover {
 .fifthpage {
     /* display: flex;
     justify-content: center; */
-    margin: auto;
+    /* margin: auto;
     background-color:  #0e1111;
     height: 100vh;
     width: max-content;
     text-align: center;
     
-}
+}  */
+
+.projects h1 {
+    
+    margin-bottom: 3rem;
+    text-align: center;
+    color: rgb(255, 77, 0);
+    font-size: 100px;
+    font-family: "Fontdiner Swanky", serif;
+    
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background: #0a0a0a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.23);
+  }
+  
+  .project-img {
+    height: 200px;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-img::after {
+    content: "View Project";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 77, 0);
+    /* font-weight: bold; */
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-family: "Zen Dots", sans-serif;
+  }
+  
+  .project-card:hover .project-img::after {
+    opacity: 1;
+    font-family: "Zen Dots", sans-serif;
+    
+  }
+  
+  .project-card h3 {
+    padding: 1rem 1rem 0;
+    font-size: 1.5rem;
+    
+  }
+  
+  .project-card p {
+    padding: 0 1rem 1rem;
+    color: #ccc;
+    line-height: 1.6;
+    font-family: "Zen Dots", sans-serif;
+  }
+
+/* footer{
+    border-top: solid 3px #ffffff;
+    margin-top: 90px;
+    
+    height: 30vh;
+} */
+
+/* Footer */
+footer {
+    background: #0e1111;
+    color: rgb(255, 255, 255);
+    padding: 2rem 0 0;
+    position: relative;
+  }
+  
+  .footer-marquee {
+    background: #0e1111;
+    padding: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .footer-marquee p {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    padding-left: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Zen Dots", sans-serif;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .social-links a {
+    font-family: "Zen Dots", sans-serif;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-family: "Zen Dots", sans-serif;
+  }
