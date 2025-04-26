@@ -269,27 +269,27 @@ nav ul li:hover {
     
 
 }
-.web {
+/* .web {
     margin-top: 8px;
     font-size: 70px;
     position: absolute;
     color: #ff69b4;
     font-family: "Aguafina Script", cursive;
-    vertical-align: middle; /* Align it properly */
-    line-height: 1; /* Prevent line gap from increasing */
+    vertical-align: middle; 
+    line-height: 1; 
     z-index: 99;
     
 }
 .webback {
     font-size: 60px;
-    /* position: absolute; */
+    
     color: #0e1111;
     font-family: "Aguafina Script", cursive;
-    vertical-align: middle; /* Align it properly */
-    line-height: 1; /* Prevent line gap from increasing */
+    vertical-align: middle;
+    line-height: 1; 
     z-index: 99;
     
-}
+} */
 
 
 .tpdiv3 {
@@ -297,6 +297,41 @@ nav ul li:hover {
     border: 2px white solid;
     grid-column: span 2 / span 2;
     grid-row-start: 5;
+    font-family: "Zen Dots", sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    flex-direction: column;
+}
+
+.tpdiv3 p{
+    
 }
      
 /* Thirdpage End */
+
+/* forth page Start */
+
+.forthpage {
+    /* display: flex;
+    justify-content: center; */
+    margin: auto;
+    margin-top: 180px;
+    background-color:  #0e1111;
+    height: 100vh;
+    width: max-content;
+    text-align: center;
+    
+}
+
+.forthpagetitle{
+    
+    color: rgb(255, 77, 0);
+    font-size: 100px;
+    font-family: "Fontdiner Swanky", serif;
+    
+}
+
+.icons{
+    height: 100px;
+}
