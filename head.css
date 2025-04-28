@@ -322,7 +322,7 @@ nav ul li:hover {
     margin: auto;
     margin-top: 180px;
     background-color:  #0e1111;
-    height: 60vh;
+    height: 90vh;
     width: max-content;
     text-align: center;
     
@@ -335,6 +335,37 @@ nav ul li:hover {
     font-family: "Fontdiner Swanky", serif;
     
 }
+
+.forthpagepara{
+    font-family: "Zen Dots", sans-serif;
+    margin-top: 50px;
+    max-width: 70vw;
+    font-size: 45px;
+    color: #ffffff;
+    animation: rotate1-to-reveal linear;
+    animation-timeline: scroll();
+}
+@keyframes rotate1-to-reveal {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    } 
+
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+  
 .icons{
     width: 70vw;
     margin-top: 40px;
@@ -342,9 +373,19 @@ nav ul li:hover {
     justify-content: space-around;
 }
 
-.icons img{
+  
+.icons  img {
     height: 100px;
-}
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in;
+  }
+  
+  img:hover {
+    filter: grayscale(0%);
+  }
+  
+
+
 
 
 /* .fifthpagetitle{
