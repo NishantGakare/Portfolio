@@ -306,10 +306,7 @@ nav ul li:hover {
     display: flex;
     font-size: 35px;
     flex-direction: column;
-}
-
-
-     
+}  
 /* Thirdpage End */
 
 /* forth page Start */
@@ -381,11 +378,6 @@ nav ul li:hover {
   img:hover {
     filter: grayscale(0%);
   }
-  
-
-
-
-
 /* .fifthpagetitle{
     
     color: rgb(255, 77, 0);
@@ -433,16 +425,12 @@ nav ul li:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(255, 77, 0, 0.23);
   }
-  
   .project-img {
     height: 200px;
     background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
     position: relative;
     overflow: hidden;
   }
-  
-
-  
   .project-img::after {
     content: "View Project";
     position: absolute;
